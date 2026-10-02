@@ -26,3 +26,9 @@ Fragmentos de medios ya publicados, sin recortar marcas o superponer texto sobre
 `tests/test_akme_revista.mjs` verifica retícula, portadas, reproducción completa, selección con teclado, sincronización, foco, movimiento reducido, fallback sin JavaScript, contraste y recursos. Se complementa con las pruebas existentes de catálogo, páginas y mascotas. Capturas locales se guardan en `qa-output/` (fuera de Git).
 
 Entorno: Windows, Microsoft Edge mediante Playwright. Los tamaños de viewport móviles no equivalen a pruebas en dispositivos físicos. Safari/WebKit nativo no validado en este equipo.
+
+## Impacto del logo en el pie
+
+Se conserva `assets/logo.png` sin alteraciones. La animación nativa de 760 ms traslada la imagen 30 px hacia el suelo, rebota 7 px y queda en reposo. La línea, las grietas y tres acentos lima son SVG decorativo; no cambian la caja del enlace ni la altura del pie. Se ejecuta una sola vez por ruta durante la sesión de la pestaña, sin audio ni bucles. El foco detiene el movimiento. Movimiento reducido, JavaScript desactivado o una API no disponible conservan una presentación estática.
+
+`tests/test_akme_impact.mjs` comprueba la imagen original, ausencia de CLS y overflow, altura idéntica del pie, WhatsApp, teclado, scroll repetido, atrás/adelante y movimiento reducido a 320/390/430/1366/1920 px.
