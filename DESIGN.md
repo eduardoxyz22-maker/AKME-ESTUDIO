@@ -32,3 +32,16 @@ Entorno: Windows, Microsoft Edge mediante Playwright. Los tamaños de viewport m
 Se conserva `assets/logo.png` sin alteraciones. La animación nativa de 1,3 s traslada la imagen 44 px hacia el suelo, rebota 9 px y queda en reposo. Solo se activa cuando el pie completo está visible y el scroll lleva 400 ms detenido. No depende de sessionStorage: una nueva carga puede volver a mostrarla. No se repite automáticamente al subir y bajar dentro de la misma página. El botón circular permite repetirla con clic, toque o teclado sin navegar; el enlace del logo muestra el efecto y luego mantiene su destino de inicio. Clics modificados conservan el comportamiento nativo. La línea, las grietas y los acentos lima son SVG decorativo; el control de repetición es absoluto y no aumenta la altura del pie. Movimiento reducido conserva estado estático, oculta la repetición y mantiene navegación inmediata. Sin JavaScript se conserva el enlace original.
 
 `tests/test_akme_impact.mjs` comprueba la imagen original, ausencia de CLS y overflow, altura idéntica del pie, WhatsApp, teclado, scroll repetido, atrás/adelante y movimiento reducido a 320/390/430/1366/1920 px.
+
+## Portadas, visor y cierre
+
+Las cinco galerías combinan su placa de identidad original con tres trabajos seleccionados. Las placas son enlaces nativos al primer medio y abren el visor con JavaScript; Canelitas conserva su perfil con el único logo disponible. No se recortan ni deforman logos o artes. Mirna presenta video, arte de labios y retrato en escritorio; el arte de rinomodelación sustituye otro retrato repetido en la galería. Los JPG nuevos son copias byte por byte de los finales aprobados:
+
+- Labios: Drive `1LpSdUCt83JfKtcPa4aOe_Pcv6xJKaooI`, Library `libfile_03d6a1febae48191b12e4f7f3e64b53d`.
+- Rinomodelación: Drive `19AbGA_WCQPKLlvnAfoZIXBqVj0fKyng7`, Library `libfile_fc17fc4f7b308191bfcd5cbba4e9e17b`.
+
+El visor oscuro reserva filas separadas para título/cierre, medio completo, flechas/contador y selección. Usa `object-fit:contain`, no descarga videos antes de abrirlos y conserva controles nativos. Swipe horizontal de al menos 50 px para tacto/lápiz, sin capturar gestos verticales ni la franja de controles de video. Atrás cierra el modal; adelante lo reabre; Escape/cierre devuelve el foco al enlace de origen después de la navegación del historial. Sin JavaScript permanecen enlaces a los originales.
+
+La navegación marca la página activa con línea lima tanto en escritorio como en el menú móvil; el estado móvil cerrado también muestra el nombre de la página. Las transiciones de 180 ms se desactivan con movimiento reducido. El cierre usa «TU MARCA. NUESTRO PRÓXIMO IMPACTO.», enlace de contacto y el logo/replay existentes. No se modifican el equipo, catálogo, recomendaciones ni mascotas.
+
+QA: `test_akme_identidad.mjs` prueba cinco anchos (320,390,430,1366,1920), cuatro páginas, anclas visibles, controles fuera del arte, touch real emulado mediante CDP, historial, foco, no-JS y navegación. Se complementa con páginas/cotizador, SpaDental, revista, mascotas e impacto. Microsoft Edge 154.0.4258.48 en Windows; viewport y touch emulados, no dispositivo físico ni Safari/iOS nativo.

@@ -58,18 +58,9 @@
     "id": "mirna",
     "name": "Dra. Mirna Veizaga",
     "category": "Comunicación profesional",
-    "context": "Presentación profesional, piezas de servicios y una campaña audiovisual de septiembre.",
+    "context": "Campaña audiovisual, arte de labios y retrato editorial: tres formas de presentar su marca personal.",
     "note": "Las campañas se muestran como trabajos realizados, no como promociones vigentes.",
     "items": [
-      {
-        "type": "image",
-        "src": "assets/clientes/mirna-valoracion.webp",
-        "title": "Agenda tu valoración",
-        "alt": "Retrato profesional de la Dra. Mirna Veizaga con invitación a una valoración",
-        "period": "",
-        "description": "",
-        "format": "Diseño"
-      },
       {
         "type": "video",
         "src": "assets/clientes/mirna-labios-campana.mp4",
@@ -82,20 +73,11 @@
       },
       {
         "type": "image",
-        "src": "assets/clientes/mirna-protocolo.webp",
-        "title": "Protocolo personalizado",
-        "alt": "Arte de presentación de protocolo de la Dra. Mirna Veizaga",
+        "src": "assets/clientes/mirna-labios-final.jpg",
+        "title": "Labios: armonía natural",
+        "alt": "Arte original de labios de la Dra. Mirna Veizaga, con retrato lateral y composición beige y dorada",
         "period": "",
-        "description": "",
-        "format": "Diseño"
-      },
-      {
-        "type": "image",
-        "src": "assets/clientes/mirna-labios.webp",
-        "title": "Labios",
-        "alt": "Arte de campaña de labios de la Dra. Mirna Veizaga",
-        "period": "",
-        "description": "",
+        "description": "Pieza de comunicación de la marca personal de la Dra. Mirna Veizaga.",
         "format": "Diseño"
       },
       {
@@ -106,6 +88,24 @@
         "period": "",
         "description": "",
         "format": "Fotografía"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-rinomodelacion-final.jpg",
+        "title": "Respetar tu esencia",
+        "alt": "Arte original de rinomodelación de la Dra. Mirna Veizaga con perfil femenino",
+        "period": "",
+        "description": "Pieza de comunicación de la marca personal de la Dra. Mirna Veizaga.",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-valoracion.webp",
+        "title": "Agenda tu valoración",
+        "alt": "Retrato profesional de la Dra. Mirna Veizaga con invitación a una valoración",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
       }
     ]
   },
