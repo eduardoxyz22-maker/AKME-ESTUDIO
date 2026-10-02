@@ -45,3 +45,15 @@ El visor oscuro reserva filas separadas para título/cierre, medio completo, fle
 La navegación marca la página activa con línea lima tanto en escritorio como en el menú móvil; el estado móvil cerrado también muestra el nombre de la página. Las transiciones de 180 ms se desactivan con movimiento reducido. El cierre usa «TU MARCA. NUESTRO PRÓXIMO IMPACTO.», enlace de contacto y el logo/replay existentes. No se modifican el equipo, catálogo, recomendaciones ni mascotas.
 
 QA: `test_akme_identidad.mjs` prueba cinco anchos (320,390,430,1366,1920), cuatro páginas, anclas visibles, controles fuera del arte, touch real emulado mediante CDP, historial, foco, no-JS y navegación. Se complementa con páginas/cotizador, SpaDental, revista, mascotas e impacto. Microsoft Edge 154.0.4258.48 en Windows; viewport y touch emulados, no dispositivo físico ni Safari/iOS nativo.
+
+## Pulido local de producción y cámara
+
+Ya existían portadas de video, marcos con `object-fit:contain`, carga lazy, un gato enlazado a WhatsApp y reducción de movimiento. Este cambio conserva los originales y añade:
+
+- Portadas revisadas: `yahweh-calor.mp4` a 8 s (detalle de producto), `cosmetic-limpieza.mp4` a 18 s (retrato en reposo) y `ferromarc-desbrozadora.mp4` a 14 s (mando). Los otros siete fotogramas se conservan tras revisión visual. Extracción directa con FFmpeg, sin reconstrucción, retoque, recorte ni alteración de marcas.
+- Tres muestras compactas solo en Servicios: retrato existente de Mirna, secuencia real de FERROMARC a 8/14/16 s y dos artes finales de SpaDental. Sin nuevos apartados en Inicio ni cambios del equipo.
+- Etiquetas Fotografía/Diseño/Video homogéneas y affordance de reproducción junto al título, fuera del arte. Dimensiones intrínsecas en todas las vistas previas y aparición de 320 ms solo al cargar una imagen pendiente; no se oculta contenido esperando JavaScript.
+- Imagen del gato intacta. Un pequeño destello junto a la cámara durante 620 ms, gesto de 1 px/1 grado y pulso suave del botón, cada 14 s de espera. Sin ojos añadidos, sonido, parpadeo rápido ni flash de pantalla. Se detiene con movimiento reducido, pestaña oculta, fuera de viewport, hover/foco, campos activos o modal.
+- Acceso visible al usar formularios. Busca posiciones libres priorizando no cubrir controles, textos o imágenes; usa una presentación horizontal compacta en móvil, con dimensiones estables y reubicación mediante transform para no producir saltos de layout. Permanece estático mientras se apunta o enfoca para pulsarlo. Solo se oculta con un diálogo modal abierto, respetando su foco y controles. El enlace de WhatsApp y la imagen original no cambian.
+
+Pruebas: producción/cámara (cadencia, pausas, imágenes reservadas, 5 tamaños), páginas/cotizador, identidad/swipe, mascotas y pie/replay. Edge 154.0.4258.53 en Windows, touch/viewport emulados; Safari físico no validado. Artefactos de revisión en `qa-output/`, ignorados por Git. Preparación local únicamente: no se publica ni se resuelve el bloqueo de aprobación del commit anterior.

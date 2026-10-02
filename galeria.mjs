@@ -1,5 +1,5 @@
-import {galleryMarkup} from './portfolio-view.mjs?v=20261002-covers1';
-const data=await fetch('portfolio.json?v=20261002-covers1').then(r=>{if(!r.ok)throw Error('No se pudo cargar el portafolio');return r.json();});
+import {galleryMarkup} from './portfolio-view.mjs?v=20261002-production1';
+const data=await fetch('portfolio.json?v=20261002-production1').then(r=>{if(!r.ok)throw Error('No se pudo cargar el portafolio');return r.json();});
 const root=document.getElementById('brand-galleries');
 root.innerHTML=galleryMarkup(data);
 document.dispatchEvent(new Event('akme:gallery-ready'));

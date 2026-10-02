@@ -12,7 +12,9 @@
         "alt": "Rotomartillo y accesorios en arte comercial de YAHWEH",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1122,
+        "height": 1402
       },
       {
         "type": "video",
@@ -22,7 +24,9 @@
         "alt": "Agricultura y jardinería · Fotograma del video",
         "period": "",
         "description": "",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "image",
@@ -31,7 +35,9 @@
         "alt": "Arte comercial de lijadora de pared YAHWEH",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1122,
+        "height": 1402
       },
       {
         "type": "image",
@@ -40,17 +46,21 @@
         "alt": "Arte comercial de pulverizador inalámbrico YAHWEH",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1122,
+        "height": 1402
       },
       {
         "type": "video",
         "src": "assets/clientes/yahweh-calor.mp4",
-        "poster": "assets/clientes/yahweh-calor-cover.webp",
+        "poster": "assets/clientes/yahweh-calor-poster.webp",
         "title": "Pistola de calor",
         "alt": "Pistola de calor · Fotograma del video",
         "period": "",
         "description": "",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       }
     ]
   },
@@ -69,7 +79,9 @@
         "alt": "Campaña de labios · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "image",
@@ -78,7 +90,9 @@
         "alt": "Arte original de labios de la Dra. Mirna Veizaga, con retrato lateral y composición beige y dorada",
         "period": "",
         "description": "Pieza de comunicación de la marca personal de la Dra. Mirna Veizaga.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 886,
+        "height": 1600
       },
       {
         "type": "image",
@@ -87,7 +101,9 @@
         "alt": "Retrato de la Dra. Mirna Veizaga en su escritorio",
         "period": "",
         "description": "",
-        "format": "Fotografía"
+        "format": "Fotografía",
+        "width": 854,
+        "height": 1280
       },
       {
         "type": "image",
@@ -96,7 +112,9 @@
         "alt": "Arte original de rinomodelación de la Dra. Mirna Veizaga con perfil femenino",
         "period": "",
         "description": "Pieza de comunicación de la marca personal de la Dra. Mirna Veizaga.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 885,
+        "height": 1600
       },
       {
         "type": "image",
@@ -105,7 +123,9 @@
         "alt": "Retrato profesional de la Dra. Mirna Veizaga con invitación a una valoración",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 900,
+        "height": 1600
       }
     ]
   },
@@ -123,7 +143,9 @@
         "alt": "Arte de implantes dentales con modelo adulto sonriendo",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1200,
+        "height": 1200
       },
       {
         "type": "video",
@@ -133,7 +155,9 @@
         "alt": "Presentación de implantes · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "image",
@@ -142,17 +166,21 @@
         "alt": "Arte de carillas con sonrisa recortada y selector de tonos",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1200,
+        "height": 1200
       },
       {
         "type": "video",
         "src": "assets/clientes/cosmetic-limpieza.mp4",
-        "poster": "assets/clientes/cosmetic-limpieza-cover.webp",
+        "poster": "assets/clientes/cosmetic-limpieza-poster.webp",
         "title": "Limpieza profesional",
         "alt": "Limpieza profesional · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "video",
@@ -162,7 +190,9 @@
         "alt": "Valoración de implantes · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       }
     ]
   },
@@ -180,7 +210,9 @@
         "alt": "Arte original de limpieza dental de Ezequiel SpaDental",
         "period": "",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1254,
+        "height": 1254
       },
       {
         "type": "image",
@@ -189,7 +221,9 @@
         "alt": "Arte original de prótesis de acrílico parcial de Ezequiel SpaDental",
         "period": "",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1254,
+        "height": 1254
       },
       {
         "type": "image",
@@ -198,7 +232,9 @@
         "alt": "Arte original de tratamiento de endodoncia de Ezequiel SpaDental",
         "period": "",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1254,
+        "height": 1254
       },
       {
         "type": "image",
@@ -207,7 +243,9 @@
         "alt": "Arte tipográfico de Ezequiel SpaDental",
         "period": "Agosto 2026",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 1024,
+        "height": 1280
       },
       {
         "type": "video",
@@ -217,7 +255,9 @@
         "alt": "Limpieza con ultrasonido · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       }
     ]
   },
@@ -235,7 +275,9 @@
         "alt": "Juego de llaves Pegasus · Fotograma del video",
         "period": "",
         "description": "",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "image",
@@ -244,7 +286,9 @@
         "alt": "Arte comercial de hidrolavadora FERROMARC",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 886,
+        "height": 1600
       },
       {
         "type": "image",
@@ -253,7 +297,9 @@
         "alt": "Arte comercial de transformador FERROMARC",
         "period": "",
         "description": "",
-        "format": "Diseño"
+        "format": "Diseño",
+        "width": 886,
+        "height": 1600
       },
       {
         "type": "video",
@@ -263,17 +309,21 @@
         "alt": "Fusibles · Fotograma del video",
         "period": "",
         "description": "",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       },
       {
         "type": "video",
         "src": "assets/clientes/ferromarc-desbrozadora.mp4",
-        "poster": "assets/clientes/ferromarc-desbrozadora-cover.webp",
+        "poster": "assets/clientes/ferromarc-desbrozadora-poster.webp",
         "title": "Desbrozadora",
         "alt": "Desbrozadora · Fotograma del video",
         "period": "",
         "description": "",
-        "format": "Video"
+        "format": "Video",
+        "width": 540,
+        "height": 960
       }
     ]
   }

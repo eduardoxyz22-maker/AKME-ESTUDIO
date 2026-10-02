@@ -1,0 +1,20 @@
+.service-samples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-bottom:48px}
+.service-sample{margin:0;min-width:0}.service-sample>a{display:block;text-decoration:none}
+.sample-stage{display:grid;aspect-ratio:4/3;background:#eeeee8;overflow:hidden;padding:12px;gap:8px}
+.sample-stage img{display:block;min-width:0;width:100%;height:100%;min-height:0;object-fit:contain}
+.sample-photo{padding:0}.sample-photo img{object-fit:contain}
+.sample-video{grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;background:#171914}
+.sample-design{grid-template-columns:1fr 1fr;align-items:center}
+.service-sample figcaption{padding-top:12px;font-size:.9375rem;line-height:1.4}
+.service-sample figcaption strong{display:block;margin-top:6px}
+.media-kind,.gallery-caption .media-kind,.sample-kind,.own-piece .sample-kind,.highlight .sample-kind{display:block;font-size:.6875rem!important;font-weight:650;line-height:1.4;letter-spacing:.09em;text-transform:uppercase;margin:0 0 8px;min-height:16px}
+.media-kind{display:flex!important;gap:8px;align-items:center}
+.gallery-card[data-format=video] .gallery-caption .media-kind::before{content:"";display:inline-block;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:8px solid currentColor;flex:none}
+.gallery-card[data-format=video] .gallery-caption{position:relative}
+.gallery-play-label{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:650;margin-top:8px;color:inherit}
+.gallery-play-label::before{content:"▶";width:28px;height:28px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-size:.625rem}
+.own-piece .sample-kind{margin-top:12px}.highlight .sample-kind{margin-top:8px}
+.media-ready{animation:media-reveal 320ms ease-out}
+@keyframes media-reveal{from{opacity:.45}to{opacity:1}}
+@media(max-width:760px){.service-samples{grid-template-columns:1fr;gap:28px;margin-bottom:36px}.service-sample>a{display:grid;grid-template-columns:44% 1fr;align-items:center;gap:16px}.service-sample figcaption{padding:0}.sample-stage{aspect-ratio:1;padding:6px;gap:4px}.sample-photo{padding:0}.service-sample figcaption strong{font-size:.9375rem}}
+@media(prefers-reduced-motion:reduce){.media-ready{animation:none}}
