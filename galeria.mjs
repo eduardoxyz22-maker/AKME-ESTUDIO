@@ -1,5 +1,5 @@
 import {galleryMarkup} from './portfolio-view.mjs';
-const data=await fetch('portfolio.json?v=20261002-editorial3').then(r=>{if(!r.ok)throw Error('No se pudo cargar el portafolio');return r.json();});
+const data=await fetch('portfolio.json?v=20261002-spa-final').then(r=>{if(!r.ok)throw Error('No se pudo cargar el portafolio');return r.json();});
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 const root=document.getElementById('brand-galleries');
 root.innerHTML=galleryMarkup(data);

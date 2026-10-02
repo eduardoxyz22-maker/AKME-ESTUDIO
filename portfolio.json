@@ -169,10 +169,37 @@
   {
     "id": "spadental",
     "name": "Ezequiel SpaDental",
-    "category": "Campañas de consulta dental",
-    "context": "Artes y videos que presentan la consulta y servicios de limpieza dental.",
+    "category": "Servicios de salud dental",
+    "context": "Piezas comerciales de limpieza dental, acrílico parcial, endodoncia y consulta.",
     "note": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
     "items": [
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-limpieza-final.jpg",
+        "title": "Limpieza dental",
+        "alt": "Arte original de limpieza dental de Ezequiel SpaDental",
+        "period": "",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-acrilico-final.jpg",
+        "title": "Acrílico parcial",
+        "alt": "Arte original de prótesis de acrílico parcial de Ezequiel SpaDental",
+        "period": "",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-endodoncia-final.jpg",
+        "title": "Endodoncia",
+        "alt": "Arte original de tratamiento de endodoncia de Ezequiel SpaDental",
+        "period": "",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
       {
         "type": "image",
         "src": "assets/clientes/spadental-tipografico.webp",
@@ -184,48 +211,10 @@
       },
       {
         "type": "video",
-        "src": "assets/clientes/spadental-consulta.mp4",
-        "poster": "assets/clientes/spadental-consulta-cover.webp",
-        "title": "Presentación de la consulta",
-        "alt": "Presentación de la consulta · Fotograma del video",
-        "period": "Septiembre",
-        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
-      },
-      {
-        "type": "image",
-        "src": "assets/clientes/spadental-consulta.webp",
-        "title": "Vení a conocernos",
-        "alt": "Arte de campaña con recepción y visitante de espaldas",
-        "period": "Septiembre",
-        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
-      },
-      {
-        "type": "image",
-        "src": "assets/clientes/spadental-adivinar.webp",
-        "title": "Dejá de adivinar",
-        "alt": "Arte de consulta con visitante de espaldas",
-        "period": "Septiembre",
-        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Diseño"
-      },
-      {
-        "type": "video",
         "src": "assets/clientes/spadental-limpieza.mp4",
         "poster": "assets/clientes/spadental-limpieza-cover.webp",
         "title": "Limpieza con ultrasonido",
         "alt": "Limpieza con ultrasonido · Fotograma del video",
-        "period": "Septiembre",
-        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
-        "format": "Video"
-      },
-      {
-        "type": "video",
-        "src": "assets/clientes/spadental-consulta2.mp4",
-        "poster": "assets/clientes/spadental-consulta2-cover.webp",
-        "title": "Consulta: segunda pieza",
-        "alt": "Consulta: segunda pieza · Fotograma del video",
         "period": "Septiembre",
         "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
         "format": "Video"

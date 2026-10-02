@@ -1,0 +1,3 @@
+/* Preserve the complete square commercial originals in every preview. */
+#proyecto-spadental .gallery-canvas{aspect-ratio:1;max-height:none}
+#proyecto-spadental .gallery-canvas img{object-fit:contain}
