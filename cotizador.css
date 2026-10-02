@@ -1,0 +1,49 @@
+#cotizador{padding-top:36px;scroll-margin-top:90px}
+.quote-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.quote-form{border:1px solid var(--line);padding:28px;border-radius:var(--r-m)}
+.quote-form fieldset{border:0;padding:0;margin:0 0 24px;min-width:0}
+.quote-form legend,.quote-label{font-weight:600;display:block;margin-bottom:12px}
+.quote-goals{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quote-goals label{display:flex;align-items:start;gap:8px;border:1px solid var(--line);padding:12px;cursor:pointer;font-size:.875rem;border-radius:8px}
+.quote-goals label:has(input:checked){border-color:var(--ink);background:var(--mist)}
+.quote-goals label:last-child{grid-column:1/-1}
+.quote-goals small{display:block;color:var(--muted);font-size:.8125rem;margin-top:4px}
+.quote-form input{accent-color:var(--ink)}
+.quote-quantities{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;margin-bottom:24px}
+.quote-quantity label{font-size:1rem;font-weight:600;display:block}
+.quote-stepper{display:flex;align-items:center;margin:10px 0;width:max-content;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.quote-stepper button{width:44px;height:44px;background:var(--paper);border:0;font-size:1.3rem;cursor:pointer}
+.quote-stepper button:hover:enabled{background:var(--lime)}
+.quote-stepper output{width:36px;text-align:center;font-variant-numeric:tabular-nums}
+.quote-quantity input{width:100%;min-height:28px;margin:0}
+.quote-limits{display:flex;justify-content:space-between;color:var(--muted);font-size:.8125rem}
+.quote-budget{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:0 12px;margin-bottom:24px;border-radius:8px}
+.quote-budget input{width:100%;min-width:0;border:0;padding:14px 0;background:transparent;font:inherit}
+.quote-budget span{white-space:nowrap;font-size:.875rem}
+.quote-extras{display:grid;gap:10px;font-size:.9375rem}
+.quote-extras label{display:flex;align-items:center;gap:8px;min-height:32px}
+.quote-help{font-size:.875rem;color:var(--muted);margin-top:12px}
+.quote-reset{background:none;border:0;text-decoration:underline;font:inherit;cursor:pointer;padding:8px 0}
+.quote-result{background:var(--ink);color:white;border-top:5px solid var(--lime);padding:30px;border-radius:var(--r-m);scroll-margin-top:96px;min-width:0}
+.quote-result .eyebrow{color:#c7c7c9;font-size:.8125rem;letter-spacing:.12em}
+.quote-result h3{font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;margin:22px 0 8px;overflow-wrap:anywhere}
+.quote-price{font-size:2.5rem;font-weight:600;margin:20px 0 14px;line-height:1.2}
+.quote-price small{font-size:1rem;font-weight:400}
+.quote-reason{color:#ddd;line-height:1.6}
+.quote-details{padding-left:20px;margin:22px 0}
+.quote-details li{margin-bottom:10px}
+.quote-result .quote-help{color:#c7c7c9}
+.quote-actions{display:grid;gap:12px;margin-top:24px}
+.quote-actions .btn{line-height:1.4;text-align:center;letter-spacing:.04em}
+.quote-actions .quote-copy{background:transparent;color:white;border-color:#888}
+.quote-inspect{margin-top:20px}
+.quote-inspect label{display:block;font-size:.875rem;margin-bottom:8px}
+.quote-inspect select{width:100%;padding:12px;font:inherit;background:white;color:var(--ink);border:1px solid var(--line);border-radius:8px}
+.quote-custom{margin-top:26px;padding:26px;border:1px solid var(--line);border-radius:var(--r-m)}
+.quote-custom h3{font-size:1.5rem;margin-bottom:12px}
+.quote-custom textarea,.quote-fallback textarea{display:block;width:100%;padding:12px;font:inherit;resize:vertical;border:1px solid var(--line);border-radius:8px;margin:12px 0}
+.quote-custom .btn{margin:8px 8px 0 0;line-height:1.4}
+.quote-fallback{margin-top:20px}
+@media(max-width:900px){.quote-grid{grid-template-columns:minmax(0,1fr)}.quote-grid>div{min-width:0}.quote-result{max-width:none}}
+@media(max-width:480px){.quote-form,.quote-result,.quote-custom{padding:20px}.quote-goals{grid-template-columns:1fr}.quote-quantities{gap:24px 14px}.quote-goals small{font-size:.875rem}.quote-price{font-size:2rem}.quote-custom .btn{width:100%;margin-right:0}}
+@media(max-width:359px){.quote-quantities{grid-template-columns:minmax(0,1fr)}.quote-quantity input{max-width:100%}}

@@ -1,0 +1,291 @@
+[
+  {
+    "id": "yahweh",
+    "name": "YAHWEH",
+    "category": "Herramientas y producto",
+    "context": "Artes de producto y presentaciones en video de herramientas y equipos.",
+    "items": [
+      {
+        "type": "image",
+        "src": "assets/clientes/yahweh-rotomartillo.webp",
+        "title": "Potencia para concreto",
+        "alt": "Rotomartillo y accesorios en arte comercial de YAHWEH",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/yahweh-agricultura.mp4",
+        "poster": "assets/clientes/yahweh-agricultura-cover.webp",
+        "title": "Agricultura y jardinería",
+        "alt": "Agricultura y jardinería · Fotograma del video",
+        "period": "",
+        "description": "",
+        "format": "Video"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/yahweh-lijadora.webp",
+        "title": "Lijadora de pared",
+        "alt": "Arte comercial de lijadora de pared YAHWEH",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/yahweh-pulverizador.webp",
+        "title": "Pulverizador inalámbrico",
+        "alt": "Arte comercial de pulverizador inalámbrico YAHWEH",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/yahweh-calor.mp4",
+        "poster": "assets/clientes/yahweh-calor-cover.webp",
+        "title": "Pistola de calor",
+        "alt": "Pistola de calor · Fotograma del video",
+        "period": "",
+        "description": "",
+        "format": "Video"
+      }
+    ]
+  },
+  {
+    "id": "mirna",
+    "name": "Dra. Mirna Veizaga",
+    "category": "Comunicación profesional",
+    "context": "Presentación profesional, piezas de servicios y una campaña audiovisual de septiembre.",
+    "note": "Las campañas se muestran como trabajos realizados, no como promociones vigentes.",
+    "items": [
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-valoracion.webp",
+        "title": "Agenda tu valoración",
+        "alt": "Retrato profesional de la Dra. Mirna Veizaga con invitación a una valoración",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/mirna-labios-campana.mp4",
+        "poster": "assets/clientes/mirna-labios-campana-cover.webp",
+        "title": "Campaña de labios",
+        "alt": "Campaña de labios · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-protocolo.webp",
+        "title": "Protocolo personalizado",
+        "alt": "Arte de presentación de protocolo de la Dra. Mirna Veizaga",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-labios.webp",
+        "title": "Labios",
+        "alt": "Arte de campaña de labios de la Dra. Mirna Veizaga",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/mirna-retrato.webp",
+        "title": "Retrato profesional",
+        "alt": "Retrato de la Dra. Mirna Veizaga en su escritorio",
+        "period": "",
+        "description": "",
+        "format": "Fotografía"
+      }
+    ]
+  },
+  {
+    "id": "cosmetic",
+    "name": "Cosmetic Dental and Face Center",
+    "category": "Campañas de salud dental",
+    "context": "Artes comerciales y videos de presentación de implantes, carillas y limpieza profesional.",
+    "note": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+    "items": [
+      {
+        "type": "image",
+        "src": "assets/clientes/cosmetic-implantes.webp",
+        "title": "Implantes dentales",
+        "alt": "Arte de implantes dentales con modelo adulto sonriendo",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/cosmetic-implantes.mp4",
+        "poster": "assets/clientes/cosmetic-implantes-cover.webp",
+        "title": "Presentación de implantes",
+        "alt": "Presentación de implantes · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/cosmetic-carillas.webp",
+        "title": "Carillas dentales",
+        "alt": "Arte de carillas con sonrisa recortada y selector de tonos",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/cosmetic-limpieza.mp4",
+        "poster": "assets/clientes/cosmetic-limpieza-cover.webp",
+        "title": "Limpieza profesional",
+        "alt": "Limpieza profesional · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/cosmetic-valoracion.mp4",
+        "poster": "assets/clientes/cosmetic-valoracion-cover.webp",
+        "title": "Valoración de implantes",
+        "alt": "Valoración de implantes · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      }
+    ]
+  },
+  {
+    "id": "spadental",
+    "name": "Ezequiel SpaDental",
+    "category": "Campañas de consulta dental",
+    "context": "Artes y videos que presentan la consulta y servicios de limpieza dental.",
+    "note": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+    "items": [
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-tipografico.webp",
+        "title": "No adivines",
+        "alt": "Arte tipográfico de Ezequiel SpaDental",
+        "period": "Agosto 2026",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/spadental-consulta.mp4",
+        "poster": "assets/clientes/spadental-consulta-cover.webp",
+        "title": "Presentación de la consulta",
+        "alt": "Presentación de la consulta · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-consulta.webp",
+        "title": "Vení a conocernos",
+        "alt": "Arte de campaña con recepción y visitante de espaldas",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/spadental-adivinar.webp",
+        "title": "Dejá de adivinar",
+        "alt": "Arte de consulta con visitante de espaldas",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/spadental-limpieza.mp4",
+        "poster": "assets/clientes/spadental-limpieza-cover.webp",
+        "title": "Limpieza con ultrasonido",
+        "alt": "Limpieza con ultrasonido · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/spadental-consulta2.mp4",
+        "poster": "assets/clientes/spadental-consulta2-cover.webp",
+        "title": "Consulta: segunda pieza",
+        "alt": "Consulta: segunda pieza · Fotograma del video",
+        "period": "Septiembre",
+        "description": "Pieza de campaña del portafolio. Los precios y promociones mostrados pertenecen a la campaña original y no son una oferta vigente.",
+        "format": "Video"
+      }
+    ]
+  },
+  {
+    "id": "ferromarc",
+    "name": "FERROMARC",
+    "category": "Herramientas y equipos",
+    "context": "Presentaciones comerciales de producto en imagen y video.",
+    "items": [
+      {
+        "type": "video",
+        "src": "assets/clientes/ferromarc-pegasus.mp4",
+        "poster": "assets/clientes/ferromarc-pegasus-cover.webp",
+        "title": "Juego de llaves Pegasus",
+        "alt": "Juego de llaves Pegasus · Fotograma del video",
+        "period": "",
+        "description": "",
+        "format": "Video"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/ferromarc-hidrolavadora.webp",
+        "title": "Hidrolavadora",
+        "alt": "Arte comercial de hidrolavadora FERROMARC",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "image",
+        "src": "assets/clientes/ferromarc-transformador.webp",
+        "title": "Transformador",
+        "alt": "Arte comercial de transformador FERROMARC",
+        "period": "",
+        "description": "",
+        "format": "Diseño"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/ferromarc-fusibles.mp4",
+        "poster": "assets/clientes/ferromarc-fusibles-cover.webp",
+        "title": "Fusibles",
+        "alt": "Fusibles · Fotograma del video",
+        "period": "",
+        "description": "",
+        "format": "Video"
+      },
+      {
+        "type": "video",
+        "src": "assets/clientes/ferromarc-desbrozadora.mp4",
+        "poster": "assets/clientes/ferromarc-desbrozadora-cover.webp",
+        "title": "Desbrozadora",
+        "alt": "Desbrozadora · Fotograma del video",
+        "period": "",
+        "description": "",
+        "format": "Video"
+      }
+    ]
+  }
+]
