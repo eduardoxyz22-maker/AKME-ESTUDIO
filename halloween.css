@@ -12,3 +12,5 @@
 @media(max-width:760px){.halloween-welcome>.wrap{gap:10px}.halloween-sound-actions button{padding-inline:13px}.halloween-welcome p{font-size:12px}}
 
 .seasonal-web path{vector-effect:non-scaling-stroke}.halloween-special>.seasonal-web svg{stroke:#c7d3a3}
+
+.halloween-laugh{margin-top:18px;min-height:66px}.halloween-laugh-play{min-height:44px;background:transparent;color:#edf3dd;border:1px solid #6c7758;border-radius:24px;padding:10px 16px;font:600 12px/1.2 Archivo,sans-serif;cursor:pointer}.halloween-laugh-play:hover{border-color:var(--lime);color:var(--lime)}.halloween-laugh-play:focus-visible{outline:3px solid var(--lime);outline-offset:3px}.halloween-laugh-play[hidden]{display:none}.halloween-laugh-status{margin:8px 0 0;font-size:11px;line-height:1.4;color:#bac4a8;max-width:38ch}.halloween-laugh-play:disabled{cursor:wait}

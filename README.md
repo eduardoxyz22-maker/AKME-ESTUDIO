@@ -14,4 +14,6 @@ Pruebas: `node tests/test_akme_cotizador.mjs`, `node tests/test_akme_pages.mjs`,
 
 La versión anterior está disponible en el commit `08abbb14dbfefc3e479bb650f5bbc8206c4d308a`.
 
-Audio de bienvenida: MP3 original completo (9,56 s), únicamente en Inicio y después de elegir «Entrar con sonido». Se ofrece una vez por sesión de pestaña, volumen inicial 35 %, sin bucles. «Entrar sin sonido» no solicita el archivo. El control visible permite silenciar/reanudar; ocultar la pestaña pausa y exige reanudar explícitamente. Desactivar la campaña también elimina esta opción.
+Audio de bienvenida: MP3 original completo (9,56 s), únicamente en Inicio y al aparecer el gato de la franja, después de elegir «Entrar con sonido». Se reproduce una vez por sesión de pestaña, volumen inicial 35 %, sin bucles. «Entrar sin sonido» no solicita el archivo. El control visible permite silenciar/reanudar; ocultar la pestaña pausa y exige reanudar explícitamente. Desactivar la campaña también elimina esta opción.
+
+La sección `#halloween` ofrece «Oír la risita» si no hubo consentimiento o si el navegador bloqueó el inicio automático tras desplazarse. La elección de silencio se respeta hasta que se active explícitamente ese botón. Se guardan por separado elección y reproducción iniciada: recargar no duplica la risa. No se vincula al ciclo de 10 segundos del gato flotante.
