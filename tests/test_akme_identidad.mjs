@@ -10,7 +10,7 @@ for(const width of [1920,1366,320,390,430]){
  for(const file of ['index.html','portafolio.html','servicios.html','planes.html']){
   await go(file);assert.equal(await page.locator('.nav [aria-current=page]').count(),1);assert.equal(await page.locator('#menu-panel [aria-current=page]').count(),1);
   assert.equal(await page.locator('.impact-phrase').textContent(),'TU MARCA. NUESTRO PRÓXIMO IMPACTO.');
-  if(width<761){assert(await page.locator('.mobile-location').isVisible());await page.locator('#menu-btn').click();assert(await page.locator('#menu-panel [aria-current=page]').isVisible());await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('#gallery-viewer')?.open);}
+  if(width<761){assert(await page.locator('.mobile-location').isVisible());await page.locator('#menu-btn').click();assert(await page.locator('#navigation-dialog [aria-current=page]').isVisible());await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('#gallery-viewer')?.open);}
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  }
  await go('portafolio.html#proyecto-mirna');await page.locator('.magazine-brand .gallery-heading').first().waitFor();
