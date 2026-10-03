@@ -39,3 +39,7 @@ $('quote-open-custom').addEventListener('click',()=>{custom=true;render();$('quo
 async function copy(personal){const text=summary(personal);try{await navigator.clipboard.writeText(text);$('quote-copy-status').textContent='Resumen copiado.';}catch{$('quote-fallback').hidden=false;$('quote-fallback-text').value=text;$('quote-fallback-text').focus();$('quote-fallback-text').select();$('quote-copy-status').textContent='Podés copiar el resumen seleccionado.';}}
 $('quote-copy').addEventListener('click',()=>copy(false));$('quote-custom-copy').addEventListener('click',()=>copy(true));
 render();
+
+// Explicit safe events: do not pass the generated URL, note, budget or summary.
+$('quote-wa').addEventListener('click',()=>{const {selected,valid}=selection();if(valid)window.akmeAnalytics?.whatsapp('quote',selected.id);});
+$('quote-custom-wa').addEventListener('click',()=>window.akmeAnalytics?.whatsapp('quote_custom','custom'));

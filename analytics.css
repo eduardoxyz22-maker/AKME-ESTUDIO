@@ -1,0 +1,11 @@
+.analytics-preferences{position:fixed;z-index:1000;left:16px;bottom:16px;width:min(360px,calc(100% - 32px));padding:16px;border:1px solid #222;background:#fff;color:#171717;box-shadow:0 4px 20px #0002;border-radius:12px;font:14px/1.4 Archivo,Arial,sans-serif;max-height:calc(100dvh - 32px);overflow:auto}
+.analytics-preferences[hidden]{display:none}
+.analytics-preferences h2{font:700 17px/1.2 Archivo,Arial,sans-serif;margin:0 0 8px}
+.analytics-preferences p{margin:0 0 12px}
+.analytics-preferences a{text-decoration:underline;color:inherit}
+.analytics-preferences>div{display:flex;gap:8px}
+.analytics-preferences button{flex:1;min-height:44px;padding:8px;border:1px solid #222;border-radius:6px;background:#fff;color:#171717;font:600 14px Archivo,Arial,sans-serif;cursor:pointer}
+.analytics-preferences button:hover{background:#edffb4}
+.analytics-preferences button:focus-visible,[data-analytics-preferences]:focus-visible{outline:3px solid #5d771d;outline-offset:3px}
+[data-analytics-preferences]{font:inherit;color:inherit;background:transparent;border:0;padding:8px 0;text-decoration:underline;cursor:pointer}
+#privacidad{scroll-margin-top:100px}#privacidad p{max-width:75ch}#privacidad a{text-decoration:underline}
