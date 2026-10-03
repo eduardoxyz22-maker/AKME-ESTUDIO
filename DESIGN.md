@@ -65,3 +65,7 @@ Revisión de cámara: brillo localizado de 16 px en móvil (18 px en escritorio)
 Se elimina la cápsula blanca y la disposición horizontal: vuelve la imagen original transparente sobre el botón lima Contactanos, en columna, también en móvil. El destello localizado aumenta a 28 px en móvil y 32 px en escritorio, pico de opacidad 1, halo suave y duración de 1 s. No se alteran gafas ni bitmap; no hay ojos añadidos, flash de pantalla ni strobe. Cadencia real entre eventos: aproximadamente 15 s. Conserva pausas y movimiento reducido.
 
 QA: mascota visible sin cubrir controles a 320/390/430/1366/1920/1930, formularios y modales; test de producción comprueba además fondo transparente y disposición en columna. Grabación sin acelerar: dos destellos inspeccionados visualmente a 14,5 y 29,5 s del clip privado corregido, con zoom sincronizado. Cambios locales únicamente, sin push.
+
+## Gesto de tomar foto
+
+El gesto previo de 1 px/1° durante 0,8 s resultaba demasiado sutil en móvil. Se modifica únicamente la animación de la figura: inclinación de -4° y elevación de 4 px, retorno leve de +2°/-1 px y reposo, duración total 1 s. El flash aprobado, sus dimensiones y keyframes, el botón, el bitmap y la cadencia permanecen idénticos. Registro real en móvil 390×844: máximos muestreados -3,90°/-3,90 px, intervalo entre ciclos 15,03 s y rectángulo del botón invariable. Preview privado de ciclo completo con zoom a velocidad real; gestos y destellos en torno a 14–15 y 29–30 s. Pruebas de producción/cámara, pausas y reduced motion aprobadas. Solo local.
