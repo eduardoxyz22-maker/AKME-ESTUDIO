@@ -35,6 +35,7 @@ try{
  assert(requests.some(x=>x.includes('gtag/js')),'Real tag requested');
  if(realTag)assert(payloads.length>0,'Real GA transport captured');
  assert.equal(await count('page_view'),1);
+ assert.equal((await commands()).find(x=>x[0]==='config')[2].send_page_view,false);
  await page.evaluate(()=>document.querySelector('.quote-mascot').addEventListener('click',e=>e.preventDefault()));
  await page.locator('.quote-mascot').click();await pause();assert.equal(await count('whatsapp_click'),1);
  await page.evaluate(()=>{window.akmeAnalytics.whatsapp('SECRET_PLACEMENT','smart');window.akmeAnalytics.whatsapp('brief','SECRET_PACKAGE');});assert.equal(await count('whatsapp_click'),1);
