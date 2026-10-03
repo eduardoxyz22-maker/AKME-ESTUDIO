@@ -7,3 +7,11 @@ Copia de la web AKME aprobada en el commit `3aa5da0ab39acc3ea98be9f1f4566d1fea72
 Publicación con GitHub Pages desde `main`, raíz `/`. Recursos y enlaces internos relativos.
 
 Pruebas: `node tests/test_akme_cotizador.mjs`, `node tests/test_akme_pages.mjs`, `node tests/test_akme_animals.mjs` (Playwright y Edge). Crear `qa-output` antes de ejecutarlas. `AKME_LIVE=1` verifica el sitio público.
+
+## Campaña temporal Halloween
+
+`seasonal-config.js` controla toda la ambientación. Cambiar `enabled: true` a `enabled: false` y publicar retira la franja, las telarañas y el detalle de transición; también restaura el gato y su aviso normales. No hay fecha automática de activación o vencimiento. El gato conserva el temporizador de 10 segundos de `camera.js`.
+
+La versión anterior está disponible en el commit `08abbb14dbfefc3e479bb650f5bbc8206c4d308a`.
+
+Audio de bienvenida: MP3 original completo (9,56 s), únicamente en Inicio y después de elegir «Entrar con sonido». Se ofrece una vez por sesión de pestaña, volumen inicial 35 %, sin bucles. «Entrar sin sonido» no solicita el archivo. El control visible permite silenciar/reanudar; ocultar la pestaña pausa y exige reanudar explícitamente. Desactivar la campaña también elimina esta opción.
