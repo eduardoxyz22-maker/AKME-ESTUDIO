@@ -11,5 +11,7 @@ function update(){scheduled=false;const modal=!!document.querySelector('dialog[o
  }
  const chosen=best(false);
  pet.style.left='0';pet.style.top='0';pet.style.right='auto';pet.style.bottom='auto';pet.style.transform='translate('+chosen.left+'px,'+chosen.top+'px)';
+ const cue=pet.querySelector('.camera-cue');if(cue){const offsets=[{x:20,y:-36,side:'above'},...[0,16,32,48,64].flatMap(y=>[{x:-80,y,side:'left'},{x:120,y,side:'right'}])];const valid=offsets.map(o=>({...o,left:chosen.left+o.x,top:chosen.top+o.y,right:chosen.left+o.x+72,bottom:chosen.top+o.y+30})).filter(o=>o.left>=left+4&&o.right<=left+width-4&&o.top>=top+76&&o.bottom<=top+height-4);const score=b=>controls.reduce((n,c)=>n+area(b,c)*10000,0)+content.reduce((n,c)=>n+area(b,c),0);const place=valid.reduce((a,b)=>score(b)<score(a)?b:a,valid[0]);if(place){cue.style.left=place.x+'px';cue.style.top=place.y+'px';cue.dataset.side=place.side;}}
+
 }
 const schedule=()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update);}};for(const e of ['scroll','resize','load'])addEventListener(e,schedule,{passive:true});window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',schedule);document.addEventListener('focusin',schedule);document.addEventListener('focusout',schedule);pet.addEventListener('pointerleave',schedule);document.querySelectorAll('dialog').forEach(d=>new MutationObserver(schedule).observe(d,{attributes:true,attributeFilter:['open']}));document.addEventListener('akme:gallery-ready',schedule);update();})();
