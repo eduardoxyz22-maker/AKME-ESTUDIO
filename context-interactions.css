@@ -2,3 +2,23 @@
 .creative-process{margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}.creative-process>h2{font-size:clamp(30px,4vw,52px);letter-spacing:-.035em;line-height:1.1;margin:12px 0 22px}.process-note{max-width:65ch;font-size:14px;color:#59604e}.process-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:32px 0}.process-tabs span{font-size:11px;font-weight:700;letter-spacing:.07em;padding:9px 14px;border:1px solid #bbc0b3;border-radius:24px}.process-tabs [aria-current=true]{background:var(--lime);border-color:var(--lime)}.process-step{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:34px 0;min-height:300px;border-top:1px solid var(--line);align-items:center;opacity:1;transition:opacity 300ms}.process-enhanced .process-step:not(.is-current){opacity:.48}.process-step h3{font-size:clamp(26px,3vw,38px);letter-spacing:-.035em;margin:8px 0}.process-step .step-index{font-size:12px;color:#5b644a}.process-step.is-current .step-index{font-weight:750;color:#526a04}.process-graphic{height:220px;border:1px solid #c4c8bd;display:grid;place-items:center;background:#f1f2ec;position:relative;overflow:hidden}.process-graphic svg{width:70%;height:70%;stroke:#171914;stroke-width:2;fill:none}.process-graphic .lime{fill:var(--lime);stroke:none}.concept-tag{position:absolute;bottom:12px;left:14px;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#535a48}.process-graphic img{width:100%;height:100%;object-fit:contain}.process-step:last-of-type .process-graphic{height:300px;background:#171914}.process-scope{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}.process-scope summary{font-weight:650;cursor:pointer;min-height:44px}.process-scope ol{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:24px 0;list-style:none}.process-scope b,.process-scope span{display:block}.process-scope span{font-size:14px;margin-top:8px}
 @media(max-width:760px){.impact-message{padding:54px 0}.impact-message h2{font-size:clamp(36px,10.6vw,78px)}.process-step{grid-template-columns:1fr;gap:20px;padding:28px 0;min-height:430px}.process-graphic{height:220px}.process-tabs span{padding:7px 9px;font-size:9px}.process-scope ol{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){.process-enhanced .process-step:not(.is-current){opacity:1}.process-step{transition:none}.impact-message h2 i,.mascot-reactive{transform:none!important}}
+
+/* A six-second construction sequence runs only on the visible active stage. */
+.process-outline,.process-block,.process-playhead,.process-record,#concept-step-0 .lime,#concept-step-1 .lime{transform-box:fill-box;transform-origin:center}
+.motion-active .process-outline{animation:process-draw 6s cubic-bezier(.25,.6,.3,1) infinite}
+#concept-step-0.motion-active .lime,#concept-step-1.motion-active .lime{animation:process-light 6s ease-in-out infinite}
+.motion-active .process-block{animation:process-block 6s cubic-bezier(.22,.65,.3,1) infinite}
+.motion-active .block-two{animation-name:process-block-two}.motion-active .block-three{animation-name:process-block-three}
+.motion-active .process-playhead{animation:process-scan 6s ease-in-out infinite}
+.process-record{fill:var(--lime);stroke:none}.motion-active .process-record{animation:process-record 6s ease-in-out infinite}
+#concept-step-3 .process-graphic:after{content:'';position:absolute;inset:0;border:2px solid var(--lime);opacity:0;pointer-events:none}
+#concept-step-3.motion-active .process-graphic:after{animation:process-result 6s ease-in-out infinite}
+@keyframes process-draw{0%{stroke-dasharray:1;stroke-dashoffset:1;opacity:.35}24%,100%{stroke-dasharray:1;stroke-dashoffset:0;opacity:1}}
+@keyframes process-light{0%,12%{opacity:.2;transform:scale(.82)}35%,70%{opacity:1;transform:scale(1)}85%,100%{opacity:.9;transform:scale(1)}}
+@keyframes process-block{0%,15%{opacity:0;transform:translateY(9px)}30%,100%{opacity:1;transform:none}}
+@keyframes process-block-two{0%,23%{opacity:0;transform:translateY(9px)}38%,100%{opacity:1;transform:none}}
+@keyframes process-block-three{0%,31%{opacity:0;transform:translateY(9px)}46%,100%{opacity:1;transform:none}}
+@keyframes process-scan{0%,44%{opacity:0;transform:translateX(-125px)}48%{opacity:1;transform:translateX(-125px)}73%{opacity:1;transform:translateX(105px)}83%,100%{opacity:1;transform:none}}
+@keyframes process-record{0%,30%{opacity:.25}45%,60%{opacity:1}75%{opacity:.35}90%,100%{opacity:1}}
+@keyframes process-result{0%,20%,100%{opacity:0}45%,70%{opacity:.65}}
+@media(prefers-reduced-motion:reduce){.process-graphic *,.process-graphic:after{animation:none!important}.process-graphic:after{opacity:0!important}}
