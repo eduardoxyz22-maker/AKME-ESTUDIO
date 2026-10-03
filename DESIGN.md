@@ -69,3 +69,9 @@ QA: mascota visible sin cubrir controles a 320/390/430/1366/1920/1930, formulari
 ## Gesto de tomar foto
 
 El gesto previo de 1 px/1° durante 0,8 s resultaba demasiado sutil en móvil. Se modifica únicamente la animación de la figura: inclinación de -4° y elevación de 4 px, retorno leve de +2°/-1 px y reposo, duración total 1 s. El flash aprobado, sus dimensiones y keyframes, el botón, el bitmap y la cadencia permanecen idénticos. Registro real en móvil 390×844: máximos muestreados -3,90°/-3,90 px, intervalo entre ciclos 15,03 s y rectángulo del botón invariable. Preview privado de ciclo completo con zoom a velocidad real; gestos y destellos en torno a 14–15 y 29–30 s. Pruebas de producción/cámara, pausas y reduced motion aprobadas. Solo local.
+
+## Secuencia de foto cada 10 segundos
+
+Se separan las fases a pedido del usuario: gesto de 4 px/4° durante 1 s; figura en reposo durante una pausa de 350 ms; flash aprobado durante 1 s con la figura inmóvil. El siguiente gesto empieza 10 s después del inicio del anterior, descontando la duración real de la secuencia. La cancelación al enfocar, ocultar pestaña, abrir modal o activar movimiento reducido cancela también la pausa pendiente. Botón y flash aprobados sin cambios.
+
+Evidencia real: gestos a 8,836/18,839 s; flashes a 10,205/20,224 s en el preview privado de 24 s. Todas las 14 muestras con flash visible mostraron transform de figura en reposo; un único rectángulo del botón durante ambos ciclos. Test de producción actualizado y aprobado con ciclos reales, quietud del gato y botón fijo. Captura PNG a tiempos reales y codificación limpia H.264 High; sin cambios visibles del fondo. Solo local, sin publicación.
