@@ -9,7 +9,7 @@ for(const width of [1920,1366,320,390,430]){
  await page.setViewportSize({width,height:900});await go('servicios.html');await page.locator('.service-samples img').evaluateAll(async es=>Promise.all(es.map(e=>{e.loading='eager';return e.decode()})));
  assert.equal(await page.locator('.service-sample').count(),3);assert.equal(await page.locator('.sample-video img').count(),3);
  assert.deepEqual(await page.locator('.sample-kind').allTextContents(),['Fotografía','Video','Diseño']);
- assert(await page.locator('.quote-mascot').isVisible());assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ assert(await page.locator('.quote-mascot').isVisible());assert.equal(await page.locator('.quote-mascot').evaluate(e=>getComputedStyle(e).backgroundColor),'rgba(0, 0, 0, 0)');assert.equal(await page.locator('.quote-mascot').evaluate(e=>getComputedStyle(e).flexDirection),'column');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  await page.locator('.service-samples').scrollIntoViewIfNeeded();await page.screenshot({path:'qa-output/produccion-'+width+'.png'});
  await go('portafolio.html');assert.equal(await page.locator('.gallery-play-label').count(),4);assert.equal(await page.locator('.gallery-canvas img:not([width]),.gallery-canvas img:not([height])').count(),0);
  const dims=await page.locator('.gallery-canvas').first().boundingBox();await page.locator('.gallery-canvas img').first().evaluate(e=>{e.loading='eager';return e.decode()});assert.deepEqual(await page.locator('.gallery-canvas').first().boundingBox(),dims);

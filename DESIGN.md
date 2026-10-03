@@ -59,3 +59,9 @@ Ya existían portadas de video, marcos con `object-fit:contain`, carga lazy, un 
 Pruebas: producción/cámara (cadencia, pausas, imágenes reservadas, 5 tamaños), páginas/cotizador, identidad/swipe, mascotas y pie/replay. Edge 154.0.4258.53 en Windows, touch/viewport emulados; Safari físico no validado. Artefactos de revisión en `qa-output/`, ignorados por Git. Preparación local únicamente: no se publica ni se resuelve el bloqueo de aprobación del commit anterior.
 
 Revisión de cámara: brillo localizado de 16 px en móvil (18 px en escritorio), pico de opacidad 0,85; gafas y bitmap intactos. Clip privado corregido: 31 s, dos ciclos reales observados a 14,4 y 29,4 s, acercamiento sincronizado sin cambiar velocidad. El recorte anterior de 6,08 s no demostraba el efecto. Evidencia de ejecución y frames en qa-output. Sin publicación web.
+
+## Gato suelto — revisión solicitada
+
+Se elimina la cápsula blanca y la disposición horizontal: vuelve la imagen original transparente sobre el botón lima Contactanos, en columna, también en móvil. El destello localizado aumenta a 28 px en móvil y 32 px en escritorio, pico de opacidad 1, halo suave y duración de 1 s. No se alteran gafas ni bitmap; no hay ojos añadidos, flash de pantalla ni strobe. Cadencia real entre eventos: aproximadamente 15 s. Conserva pausas y movimiento reducido.
+
+QA: mascota visible sin cubrir controles a 320/390/430/1366/1920/1930, formularios y modales; test de producción comprueba además fondo transparente y disposición en columna. Grabación sin acelerar: dos destellos inspeccionados visualmente a 14,5 y 29,5 s del clip privado corregido, con zoom sincronizado. Cambios locales únicamente, sin push.

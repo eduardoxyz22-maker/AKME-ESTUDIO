@@ -9,7 +9,7 @@ function update(){scheduled=false;const modal=!!document.querySelector('dialog[o
   const score=b=>controls.reduce((n,c)=>n+area(b,c)*10000,0)+content.reduce((n,c)=>n+area(b,c),0);
   const chosen=candidates.reduce((a,b)=>score(b)<score(a)?b:a,candidates[0]);return{...chosen,score:score(chosen),compact};
  }
- const chosen=best(width<=760);
+ const chosen=best(false);
  pet.style.left='0';pet.style.top='0';pet.style.right='auto';pet.style.bottom='auto';pet.style.transform='translate('+chosen.left+'px,'+chosen.top+'px)';
 }
 const schedule=()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update);}};for(const e of ['scroll','resize','load'])addEventListener(e,schedule,{passive:true});window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',schedule);document.addEventListener('focusin',schedule);document.addEventListener('focusout',schedule);pet.addEventListener('pointerleave',schedule);document.querySelectorAll('dialog').forEach(d=>new MutationObserver(schedule).observe(d,{attributes:true,attributeFilter:['open']}));document.addEventListener('akme:gallery-ready',schedule);update();})();
