@@ -1,10 +1,4 @@
-/* Original identity plates and selected pieces form each client's cover. */
-.magazine-brand .gallery-heading{grid-template-columns:144px minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:28px}
-.brand-signature{display:block;width:144px;aspect-ratio:1;border:1px solid #92978a;background:#fff}
-.brand-signature img{display:block;width:100%;height:100%;object-fit:contain}
-.magazine-brand .gallery-heading h2{font-size:clamp(2rem,3.5vw,3.8rem)}
-.magazine-brand .gallery-heading .eyebrow{font-size:.75rem;letter-spacing:.08em}
-.magazine-brand .gallery-preview{padding-top:28px;border-top:1px solid var(--line)}
+/* Navigation, footer and accessible viewer refinements. */
 .nav a.link{position:relative;border-bottom-color:transparent}
 .nav a.link::after,.menu-panel a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}
 .nav a.link[aria-current=page]{border-color:transparent}
@@ -33,11 +27,6 @@
 .gallery-viewer :focus-visible{outline:3px solid var(--lime);outline-offset:2px}
 html.gallery-is-open{overflow:hidden;scrollbar-gutter:stable}
 @media(max-width:760px){
- .magazine-brand .gallery-heading{grid-template-columns:88px minmax(0,1fr);gap:16px;align-items:center}
- .brand-signature{width:88px}.magazine-brand .gallery-heading>p{grid-column:1/-1}
- .magazine-brand .gallery-heading h2{font-size:clamp(1.75rem,6.5vw,2.5rem)}
- .magazine-brand .gallery-heading .eyebrow{font-size:.6875rem;letter-spacing:.04em;line-height:1.4;margin-bottom:8px}
- .magazine-brand .editorial-number{width:28px;height:28px;margin-right:8px;display:none}
  .mobile-location{display:inline-block;font-size:.75rem;line-height:1.4;border-bottom:3px solid var(--lime);font-weight:650}
  .top .wrap{gap:10px}.nav{gap:10px}
  .impact-closing{flex-basis:100%;flex-direction:column;align-items:flex-start;gap:28px;padding-right:0}

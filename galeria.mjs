@@ -1,6 +1,6 @@
 import {initGalleryDetail} from './gallery-detail.mjs?v=20261003-detail1';
 import {initPreviews} from './portfolio-preview.mjs?v=20261003-preview1';
-import {galleryMarkup} from './portfolio-view.mjs?v=20261003-portfolio2';
+import {galleryMarkup} from './portfolio-view.mjs?v=20261003-context1';
 const data=await fetch('portfolio.json?v=20261003-portfolio2').then(r=>{if(!r.ok)throw Error('No se pudo cargar el portafolio');return r.json();});
 const root=document.getElementById('brand-galleries');
 root.innerHTML=galleryMarkup(data);
