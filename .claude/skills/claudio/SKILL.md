@@ -71,6 +71,18 @@ viene (Navidad, Día de la Madre…). Mirá la fecha de hoy: no propongas para d
   AKME, no de multiespumas»*). Nada del estudio va al repo de MULTIESPUMAS. Ese repo también es público y publica la web: ningún dato
   de cliente, gasto, informe ni enlace a carpetas privadas en el repo.
 
+## 📨 Encargos desde el panel
+Eduardo pide cosas desde el Panel AKME («📨 Encargos»): cada encargo es un doc de la colección `encargos`
+(`texto`, `agente` = a quién se lo pide o `claudio` para que lo reparta, `cliente`, `para` = hoy / esta semana / sin apuro,
+`estado`). Al enviarlo, el panel le manda un comentario a Claudio («Encargo enc-… · para … · cliente · cuándo: texto»).
+- **Al recibirlo**: leé el doc en la base (no solo el comentario), pasalo a `estado:'en curso'` y encargá el trabajo al
+  agente que corresponda (si es para Claudio, repartilo). Contestá el comentario en una línea («Lo toma Daysi, hoy»).
+- **Al terminar**: control de calidad como siempre, la entrega va a `entregas` (y a Drive si es para el cliente) y el
+  encargo queda con `estado:'listo'`, `respuesta` (qué se hizo, en una o dos frases) y `entrega` (el id).
+- Si el encargo pide gastar, activar, subir datos a Meta o mandar algo al cliente, se prepara y se pregunta: el encargo no
+  es el «sí».
+- Si nadie estaba mirando cuando se mandó, lo levanta el repaso de la mañana (todos los `encargos` en `nuevo`).
+
 ## 🔁 Seguimiento como estudio de verdad
 Toda propuesta hecha o campaña en marcha se sigue hasta cerrar el ciclo (dueño, 11/11: *«los agentes deben hacer seguimiento,
 monitoreo, reportar, avisar… y mejorar, cambiar… como un estudio verdadero»*):
