@@ -1,0 +1,53 @@
+# Publica la web de AKME en GitHub Pages con «GitHub Actions» (el mismo método que usa el panel de Heaven desde octubre).
+# Por qué (11/11): el publicador automático viejo («pages build and deployment», desde la rama) se trabó en la cola de GitHub
+# y no arrancaba, aunque las acciones de la cuenta andaban bien.
+#
+# ⚠️ SOLO PUBLICA si en Settings → Pages → «Build and deployment» → Source dice «GitHub Actions». Con «Deploy from a branch»
+#    este workflow mira, ve que no le toca y no hace nada: Pages sigue publicando la rama como siempre.
+#    Volver atrás = Source → «Deploy from a branch» → main / (root) → Save.
+# La web se publica tal cual está en main (hay .nojekyll: no pasa por Jekyll).
+name: Publicar la web (GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:          # a mano: Actions → «Publicar la web (GitHub Pages)» → Run workflow
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  ver:
+    runs-on: ubuntu-latest
+    outputs:
+      modo: ${{ steps.p.outputs.modo }}
+    steps:
+      - id: p
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          m=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || echo desconocido)
+          echo "Pages publica desde: $m («workflow» = este workflow; «legacy» = la rama)"
+          echo "modo=$m" >> "$GITHUB_OUTPUT"
+
+  publicar:
+    needs: ver
+    if: needs.ver.outputs.modo == 'workflow'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
