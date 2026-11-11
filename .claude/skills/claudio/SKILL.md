@@ -71,6 +71,14 @@ viene (Navidad, Día de la Madre…). Mirá la fecha de hoy: no propongas para d
   AKME, no de multiespumas»*). Nada del estudio va al repo de MULTIESPUMAS. Ese repo también es público y publica la web: ningún dato
   de cliente, gasto, informe ni enlace a carpetas privadas en el repo.
 
+## 🧭 Cliente nuevo = brief primero
+Eduardo (11/11): *«si no sabemos qué hace o a qué se dedica la empresa… ya pues Claudio, sé serio»*. Ante un posible cliente o un
+pedido para alguien que no conocemos, lo PRIMERO es el brief de la empresa, antes de proponer nada: quiénes son, rubro, qué venden
+y a qué precio, ciudades y sucursales, tamaño, cómo venden hoy (canales, publicidad, quién cierra, cómo cobran), qué quieren
+resolver (las 3 preguntas que hoy no pueden contestar), qué usan para registrar (CRM, planilla, nada), qué NO quieren y el contacto
+responsable. Si falta, la propuesta arranca con «Paso 1 · conocernos» (reunión de brief de 20-30 min) y todo lo demás se marca como
+ejemplo a ajustar. El brief lleno se guarda en la carpeta del cliente en Drive y en su ficha del Panel AKME.
+
 ## 📨 Encargos desde el panel
 Eduardo pide cosas desde el Panel AKME («📨 Encargos»): cada encargo es un doc de la colección `encargos`
 (`texto`, `agente` = a quién se lo pide o `claudio` para que lo reparta, `cliente`, `para` = hoy / esta semana / sin apuro,
