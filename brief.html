@@ -59,6 +59,11 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--tinta);bac
 .btn.chico{min-height:42px;font-size:.74rem;border-color:#9A9C95;color:var(--apagado)}
 .msj{font-size:.86rem;color:var(--grafito);margin-top:10px;min-height:1.3em}
 .msj.ok{color:var(--bien);font-weight:600}
+.sigue{margin-top:16px;border:1.5px solid var(--linea,#E1E3DC);border-radius:16px;padding:14px 16px;background:#fff;transition:border-color .4s,box-shadow .4s}
+.sigue.on{border-color:#A2D40B;box-shadow:0 0 0 4px rgba(162,212,11,.18)}
+.sigue h3{margin:0 0 8px;font-size:1rem}
+.sigue ol{margin:0;padding-left:20px}
+.sigue li{margin:5px 0;font-size:.92rem;line-height:1.4}
 .pie{background:var(--tinta);color:#fff;margin-top:28px;border-radius:22px 22px 0 0;padding:24px 18px 22px}
 .pie .lema{font-stretch:64%;font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,7vw,2.2rem);line-height:.92}
 .pie .lema em{font-style:normal;color:var(--lima)}
@@ -107,6 +112,14 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--tinta);bac
       <button type="button" class="btn" id="b-imp">Imprimir o guardar en PDF</button>
     </div>
     <div class="msj" id="msj" role="status"></div>
+    <div class="sigue" id="sigue">
+      <h3>¿Qué pasa después?</h3>
+      <ol>
+        <li>Revisamos sus respuestas y <b>en 24 horas le enviamos su propuesta</b>, con el nivel de panel que le conviene y su precio.</li>
+        <li>Si hace falta aclarar algo, <b>coordinamos una llamada de 20 minutos</b> en el horario que le quede cómodo.</li>
+        <li>Usted revisa la propuesta, aprueba lo que le sirve y empezamos.</li>
+      </ol>
+    </div>
     <div style="margin-top:10px"><button type="button" class="btn chico" id="b-borrar">Empezar de nuevo (borrar lo escrito)</button></div>
   </div>
 </div>
@@ -219,8 +232,9 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--tinta);bac
     if (!t){ aviso('Todavía no escribió nada.'); return; }
     var url = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(t);
     if (url.length > 7000) aviso('Sus respuestas son largas: si WhatsApp corta el mensaje, use «Descargar mis respuestas» y mándenos el archivo.');
-    else aviso('Abriendo WhatsApp…', true);
+    else aviso('Abriendo WhatsApp… ¡Gracias! En 24 horas le enviamos su propuesta.', true);
     window.open(url, '_blank', 'noopener');
+    var sg = document.getElementById('sigue'); if (sg){ sg.classList.add('on'); try{ sg.scrollIntoView({behavior:'smooth', block:'center'}); }catch(e){} }
   });
   document.getElementById('b-txt').addEventListener('click', function(){
     var t = texto(false);
