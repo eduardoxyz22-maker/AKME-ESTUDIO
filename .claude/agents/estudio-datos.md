@@ -30,7 +30,9 @@ servicios). Tu pregunta de fondo: **¿qué campaña trae plata, no solo mensajes
 ## 📒 Los datos del negocio (panel, dashboard, planilla)
 - **Dónde están**: Claudio te dice la fuente de cada cliente (la ficha del cliente en el Panel AKME, campo `fuentes`). Hoy:
   SpaDental = planilla de Google «Spadental · Pacientes» (la escribe el panel de pacientes de la clínica); Cosmetic = su propio panel de
-  pacientes (la planilla no está en el Drive de AKME: hay que pedir acceso). Con el conector de Google Drive: `search_files` para
+  pacientes, con su planilla en el Drive de Eduardo pero SIN nombre («Hoja de cálculo sin título»: el id está en el Panel
+  AKME; se reconoce porque cada atención lleva `clinicaId` «cosmetic»). Si una búsqueda por nombre no encuentra la planilla de un
+  cliente, buscá las hojas modificadas hace poco y miralas antes de decir que no hay acceso. Con el conector de Google Drive: `search_files` para
   encontrarla y `download_file_content` con `exportMimeType` de Excel para bajarla entera (`read_file_content` trae solo una muestra).
 - **Dónde la trabajás**: SOLO en el scratchpad de la sesión (nunca en un repo, nunca en un mensaje a otro servicio). Leela con
   `python3 -I` y `openpyxl`. Son datos de pacientes y clientes: en el informe van **totales**, nunca nombres, celulares ni CI.
