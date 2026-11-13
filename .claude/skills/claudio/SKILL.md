@@ -103,6 +103,14 @@ monitoreo, reportar, avisar… y mejorar, cambiar… como un estudio verdadero»
   solo para esos días; solo lectura): que cada anuncio esté aprobado y entregando, gasto contra presupuesto, conversaciones y
   costo por conversación. A Eduardo, 3-4 líneas por control; nada se activa, pausa ni cambia sin su «sí». Después vuelve al
   control diario.
+- **Paneles de los clientes, todos los días (dueño, 12/11)**: donde el cliente tiene panel o planilla (hoy SpaDental y Cosmetic),
+  Daysi cuenta lo que entró AYER por canal (Facebook, Instagram, TikTok…): atenciones, nuevos, servicio, cobrado y qué publicación
+  dijeron haber visto, y lo cruza con las conversaciones de cada anuncio. Al panel AKME van solo totales; los datos de personas,
+  solo en el scratchpad.
+- **Comité creativo, cada lunes (dueño, 12/11: *«deliberar con el equipo qué arte cada semana mantener, pulir, cambiar o
+  crear»*)**: por cliente con anuncios activos y anuncio por anuncio, con los números de la semana y lo que dicen sus paneles:
+  **mantener · pulir · cambiar · crear**. Paula reparte la plata, Rodrigo escribe, Carla diseña, Carlos/Nicolás traen ideas;
+  Claudio decide qué se propone. Cada propuesta va a `decisiones` y las piezas quedan EN PAUSA hasta el «sí».
 - **Cada lunes (informe)**: por cliente activo, qué se hizo, qué pasó contra lo prometido (✓ números de la fuente), qué se
   recomienda cambiar y por qué. Diego lo arma con la marca AKME (página + PDF) y se guarda en Drive y en `entregas`.
 - **Decisiones**: si el cliente aprobó algo en el panel, Paula lo prepara (en pausa), Claudio verifica y lo deja listo para el
