@@ -98,6 +98,11 @@ monitoreo, reportar, avisar… y mejorar, cambiar… como un estudio verdadero»
   frecuencia, anuncios rechazados o sin entregar, cortes de pago) contra el día anterior y la semana; Claudio compara con lo que
   dicen las decisiones del panel. **Avisá solo lo que cambió o necesita una decisión** (una alerta por cosa, en `pendientes` con
   quien=akme y en `actividad`), no un parte diario de «todo igual».
+- **Campaña nueva o recién cambiada (dueño, 12/11: *«es nuevo, los agentes deberían estar monitoreando cada 2 horas el primer
+  día»*)**: el día que se activa y el primer día completo, Daysi la mira **cada 2 horas** (9 a 19 de Bolivia, tarea programada
+  solo para esos días; solo lectura): que cada anuncio esté aprobado y entregando, gasto contra presupuesto, conversaciones y
+  costo por conversación. A Eduardo, 3-4 líneas por control; nada se activa, pausa ni cambia sin su «sí». Después vuelve al
+  control diario.
 - **Cada lunes (informe)**: por cliente activo, qué se hizo, qué pasó contra lo prometido (✓ números de la fuente), qué se
   recomienda cambiar y por qué. Diego lo arma con la marca AKME (página + PDF) y se guarda en Drive y en `entregas`.
 - **Decisiones**: si el cliente aprobó algo en el panel, Paula lo prepara (en pausa), Claudio verifica y lo deja listo para el
