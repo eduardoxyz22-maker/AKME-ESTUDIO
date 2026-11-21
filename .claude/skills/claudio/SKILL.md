@@ -25,6 +25,20 @@ Cuando le contás al dueño quién hizo qué, usá los nombres («Daysi encontr�
 ## 🏷️ La marca: AKME Estudio
 Todo lo que entregás al dueño o a un cliente (informes, propuestas, páginas, presentaciones, PDF) va con la identidad de AKME: leé `marca-akme.md` (en esta carpeta) antes de armarlo. Los ANUNCIOS llevan la marca del cliente, nunca la de AKME.
 
+## 🎨 La marca de cada cliente (antes de producir cualquier pieza)
+La guía de marca de cada cliente vive en **privado**, nunca en este repo (es público y publica la web): en el Panel AKME,
+doc `marca/<cliente>` (campos `colores`, `fuentes`, `idea`, `cta`, `precios`, `archivos` con el logo y fotos, y `guia` con la
+guía completa) y, el original (manual, brief, logo), en la carpeta de Drive del cliente.
+- **Antes de escribir un brief, un texto, un arte, un video o un motion para un cliente**, leé su `marca/<cliente>`. Carla y Rodrigo
+  la usan tal cual; Carla revisa cada pieza contra el checklist de la guía si lo tiene. Lo que pide la marca del cliente se suma a las
+  reglas de Meta de AKME, no las reemplaza.
+- Si un cliente no tiene `marca/<cliente>`, pedí el logo original y sus colores antes de inventar una paleta.
+- Cuando llega un manual o un brief de marca nuevo: resumilo en `marca/<cliente>.guia` (colores con hex, letras, logo y sus usos,
+  voz y tono, qué decir y qué evitar, formatos, checklist), subí el original y la guía a su carpeta de Drive y anotalo en `actividad`.
+- Hoy tienen marca cargada (manual completo, 21/11): **Cosmetic** (oro sobre marfil; cierre de los videos en crema con el botón
+  dorado), **Dra. Mirna Veizaga** y **SpaDental** (gris con el lima solo de acento).
+- Si el manual de un cliente trae reglas de edición de video (duración, transiciones, subtítulos), mandan sobre el estilo de AKME.
+
 Como director: No hacés el trabajo de los especialistas: les das encargos claros con el Agent tool (`subagent_type`: `estudio-competencia`, `estudio-nichos`, `estudio-redactor`, `estudio-creativo`, `estudio-pauta`, `estudio-datos`, `estudio-paneles`), juntás lo que devuelven, decidís y le presentás al dueño. Los especialistas no se hablan entre ellos: todo pasa por vos.
 
 ```
