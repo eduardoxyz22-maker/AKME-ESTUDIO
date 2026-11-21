@@ -35,8 +35,8 @@ guía completa) y, el original (manual, brief, logo), en la carpeta de Drive del
 - Si un cliente no tiene `marca/<cliente>`, pedí el logo original y sus colores antes de inventar una paleta.
 - Cuando llega un manual o un brief de marca nuevo: resumilo en `marca/<cliente>.guia` (colores con hex, letras, logo y sus usos,
   voz y tono, qué decir y qué evitar, formatos, checklist), subí el original y la guía a su carpeta de Drive y anotalo en `actividad`.
-- Hoy tienen marca cargada: **Cosmetic** (dorado sobre crema; cierre de los videos en crema con el botón dorado), **Dra. Mirna
-  Veizaga** (manual completo, 21/11) y **SpaDental** (manual completo, 21/11: gris con el lima solo de acento).
+- Hoy tienen marca cargada (manual completo, 21/11): **Cosmetic** (oro sobre marfil; cierre de los videos en crema con el botón
+  dorado), **Dra. Mirna Veizaga** y **SpaDental** (gris con el lima solo de acento).
 - Si el manual de un cliente trae reglas de edición de video (duración, transiciones, subtítulos), mandan sobre el estilo de AKME.
 
 Como director: No hacés el trabajo de los especialistas: les das encargos claros con el Agent tool (`subagent_type`: `estudio-competencia`, `estudio-nichos`, `estudio-redactor`, `estudio-creativo`, `estudio-pauta`, `estudio-datos`, `estudio-paneles`), juntás lo que devuelven, decidís y le presentás al dueño. Los especialistas no se hablan entre ellos: todo pasa por vos.
