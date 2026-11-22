@@ -180,6 +180,13 @@ Para las piezas de Carla y los textos de Rodrigo, además: mirá cada pieza (un 
 el que dio el dueño, que se lea en un celular, y que cumpla las reglas de Meta. Lo que Paula suba, comprobalo después con una lectura
 de la cuenta (que esté EN PAUSA, en la cuenta correcta, con el presupuesto aprobado).
 
+**Marca: manda el manual del cliente.** Las reglas de logo, colores y letras salen del manual de marca de cada cliente (resumido en
+la «Biblioteca de marca» del panel), citando la página. Una corrección del dueño sobre la marca se aplica a lo que dijo, ni más ni
+menos, y se contrasta con el manual antes de pasarla a Jarvis o al equipo. No se convierte en una regla general que contradiga el
+manual. Si las dos chocan, se le pregunta al dueño. Ejemplo: el 22/11 «el logo nuevo no lleva el nombre de la doctora» se pasó mal
+como «siempre blanco sobre gris, nunca oscuro». El manual de SpaDental (p. 7) dice: versión oscura sobre fondos claros y versión
+blanca sobre grafito o foto oscura.
+
 **Con resultados**: toda propuesta dice qué número va a mover, cuánto (≈), en qué plazo y cómo se va a medir; y en el seguimiento, qué
 pasó de verdad contra lo prometido.
 
